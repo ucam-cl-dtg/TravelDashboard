@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		352289FB17FF318B009684D1 /* ShowJourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 352289FA17FF318B009684D1 /* ShowJourneyViewController.m */; };
+		354C96F617E09CED0089CBF6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354C96F517E09CED0089CBF6 /* MainViewController.m */; };
+		3562EB1F18006A290019B4E1 /* JourneyQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3562EB1E18006A290019B4E1 /* JourneyQuery.m */; };
+		3562EB2218006A5C0019B4E1 /* TrainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3562EB2118006A5C0019B4E1 /* TrainQuery.m */; };
+		3562EB251800867C0019B4E1 /* SegmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3562EB241800867C0019B4E1 /* SegmentInfo.m */; };
+		3562EB2818017FC80019B4E1 /* TrainDurationQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3562EB2718017FC80019B4E1 /* TrainDurationQuery.m */; };
+		35635CED18049E0800716F7E /* CarQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 35635CEC18049E0800716F7E /* CarQuery.m */; };
+		35635CF01804A20E00716F7E /* PostcodeQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 35635CEF1804A20E00716F7E /* PostcodeQuery.m */; };
+		35635CF31805993E00716F7E /* BusLiveQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 35635CF21805993E00716F7E /* BusLiveQuery.m */; };
+		3568FE1018B24080004B2989 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE0718B24080004B2989 /* DashboardViewController.m */; };
+		3568FE1118B24080004B2989 /* Axis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE0918B24080004B2989 /* Axis.m */; };
+		3568FE1218B24080004B2989 /* IconHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE0B18B24080004B2989 /* IconHandler.m */; };
+		3568FE1318B24080004B2989 /* TextHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE0D18B24080004B2989 /* TextHandler.m */; };
+		3568FE1418B24080004B2989 /* SceneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE0F18B24080004B2989 /* SceneHandler.m */; };
+		3568FE2818B240A4004B2989 /* Shader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE1718B240A4004B2989 /* Shader.m */; };
+		3568FE2918B240A4004B2989 /* PointShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE1918B240A4004B2989 /* PointShader.m */; };
+		3568FE2A18B240A4004B2989 /* PointShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE1A18B240A4004B2989 /* PointShader.vsh */; };
+		3568FE2B18B240A4004B2989 /* PointShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE1B18B240A4004B2989 /* PointShader.fsh */; };
+		3568FE2C18B240A4004B2989 /* TriangleShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE1D18B240A4004B2989 /* TriangleShader.m */; };
+		3568FE2D18B240A4004B2989 /* TriangleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE1E18B240A4004B2989 /* TriangleShader.vsh */; };
+		3568FE2E18B240A4004B2989 /* TriangleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE1F18B240A4004B2989 /* TriangleShader.fsh */; };
+		3568FE2F18B240A4004B2989 /* TextureShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE2118B240A4004B2989 /* TextureShader.m */; };
+		3568FE3018B240A4004B2989 /* TextureShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE2218B240A4004B2989 /* TextureShader.vsh */; };
+		3568FE3118B240A4004B2989 /* TextureShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE2318B240A4004B2989 /* TextureShader.fsh */; };
+		3568FE3218B240A4004B2989 /* LineShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568FE2518B240A4004B2989 /* LineShader.m */; };
+		3568FE3318B240A4004B2989 /* LineShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE2618B240A4004B2989 /* LineShader.vsh */; };
+		3568FE3418B240A4004B2989 /* LineShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3568FE2718B240A4004B2989 /* LineShader.fsh */; };
+		3568FE3618B24125004B2989 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3568FE3518B24125004B2989 /* GLKit.framework */; };
+		357565C717EC5CDC00AF86EC /* JourneySegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 357565C617EC5CDC00AF86EC /* JourneySegment.m */; };
+		35A9FD20180292770008BFB9 /* BusQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A9FD1F180292770008BFB9 /* BusQuery.m */; };
+		35A9FD231802943B0008BFB9 /* BusTimeQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A9FD221802943B0008BFB9 /* BusTimeQuery.m */; };
+		35A9FD371802FEAD0008BFB9 /* Scenario.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A9FD2C1802FEAD0008BFB9 /* Scenario.m */; };
+		35A9FD40180301070008BFB9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A9FD3F180301070008BFB9 /* OpenGLES.framework */; };
+		35A9FD421803010E0008BFB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A9FD411803010E0008BFB9 /* QuartzCore.framework */; };
+		35FA9B6217D9E1420031125F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA9B6117D9E1420031125F /* UIKit.framework */; };
+		35FA9B6417D9E1420031125F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA9B6317D9E1420031125F /* Foundation.framework */; };
+		35FA9B6617D9E1420031125F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FA9B6517D9E1420031125F /* CoreGraphics.framework */; };
+		35FA9B6C17D9E1420031125F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9B6A17D9E1420031125F /* InfoPlist.strings */; };
+		35FA9B6E17D9E1420031125F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9B6D17D9E1420031125F /* main.m */; };
+		35FA9B7217D9E1420031125F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA9B7117D9E1420031125F /* AppDelegate.m */; };
+		35FA9B7417D9E1420031125F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9B7317D9E1420031125F /* Default.png */; };
+		35FA9B7617D9E1420031125F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9B7517D9E1420031125F /* Default@2x.png */; };
+		35FA9B7817D9E1420031125F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FA9B7717D9E1420031125F /* Default-568h@2x.png */; };
+		35FC813518E2F6CC005ACEFB /* BuilderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC811D18E2F6CC005ACEFB /* BuilderCell.m */; };
+		35FC813618E2F6CC005ACEFB /* BuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC811F18E2F6CC005ACEFB /* BuilderViewController.m */; };
+		35FC813718E2F6CC005ACEFB /* BusRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC812118E2F6CC005ACEFB /* BusRoute.m */; };
+		35FC813818E2F6CC005ACEFB /* BusRouteParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC812318E2F6CC005ACEFB /* BusRouteParser.m */; };
+		35FC813918E2F6CC005ACEFB /* BusRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC812518E2F6CC005ACEFB /* BusRouteViewController.m */; };
+		35FC813A18E2F6CC005ACEFB /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC812718E2F6CC005ACEFB /* BusStop.m */; };
+		35FC813B18E2F6CC005ACEFB /* BusStopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC812918E2F6CC005ACEFB /* BusStopViewController.m */; };
+		35FC813D18E2F6CC005ACEFB /* RailStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC812E18E2F6CC005ACEFB /* RailStation.m */; };
+		35FC813E18E2F6CC005ACEFB /* RailStationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC813018E2F6CC005ACEFB /* RailStationParser.m */; };
+		35FC813F18E2F6CC005ACEFB /* RailStationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC813218E2F6CC005ACEFB /* RailStationTableViewController.m */; };
+		35FC814018E2F6CC005ACEFB /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC813418E2F6CC005ACEFB /* TextCell.m */; };
+		35FC814918E30898005ACEFB /* atlas_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814118E30860005ACEFB /* atlas_128x128.png */; };
+		35FC814A18E30898005ACEFB /* Bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814218E30860005ACEFB /* Bus.png */; };
+		35FC814B18E30898005ACEFB /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814318E30860005ACEFB /* Car.png */; };
+		35FC814C18E30898005ACEFB /* EA.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814418E30860005ACEFB /* EA.csv */; };
+		35FC814D18E30898005ACEFB /* RailReferences.csv in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814518E30860005ACEFB /* RailReferences.csv */; };
+		35FC814E18E30898005ACEFB /* tnds.bin in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814618E30860005ACEFB /* tnds.bin */; };
+		35FC814F18E30898005ACEFB /* Train.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814718E30860005ACEFB /* Train.png */; };
+		35FC815018E30898005ACEFB /* Walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 35FC814818E30860005ACEFB /* Walk.png */; };
+		35FC815318E308EB005ACEFB /* TNDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FC815218E308EB005ACEFB /* TNDS.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		352289F917FF318B009684D1 /* ShowJourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowJourneyViewController.h; sourceTree = "<group>"; };
+		352289FA17FF318B009684D1 /* ShowJourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowJourneyViewController.m; sourceTree = "<group>"; };
+		354C96F417E09CED0089CBF6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		354C96F517E09CED0089CBF6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3562EB1D18006A290019B4E1 /* JourneyQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JourneyQuery.h; sourceTree = "<group>"; };
+		3562EB1E18006A290019B4E1 /* JourneyQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JourneyQuery.m; sourceTree = "<group>"; };
+		3562EB2018006A5C0019B4E1 /* TrainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainQuery.h; sourceTree = "<group>"; };
+		3562EB2118006A5C0019B4E1 /* TrainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainQuery.m; sourceTree = "<group>"; };
+		3562EB231800867C0019B4E1 /* SegmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentInfo.h; sourceTree = "<group>"; };
+		3562EB241800867C0019B4E1 /* SegmentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentInfo.m; sourceTree = "<group>"; };
+		3562EB2618017FC80019B4E1 /* TrainDurationQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainDurationQuery.h; sourceTree = "<group>"; };
+		3562EB2718017FC80019B4E1 /* TrainDurationQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainDurationQuery.m; sourceTree = "<group>"; };
+		35635CEB18049E0800716F7E /* CarQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarQuery.h; sourceTree = "<group>"; };
+		35635CEC18049E0800716F7E /* CarQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarQuery.m; sourceTree = "<group>"; };
+		35635CEE1804A20E00716F7E /* PostcodeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostcodeQuery.h; sourceTree = "<group>"; };
+		35635CEF1804A20E00716F7E /* PostcodeQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostcodeQuery.m; sourceTree = "<group>"; };
+		35635CF11805993E00716F7E /* BusLiveQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusLiveQuery.h; sourceTree = "<group>"; };
+		35635CF21805993E00716F7E /* BusLiveQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusLiveQuery.m; sourceTree = "<group>"; };
+		3568FE0618B24080004B2989 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		3568FE0718B24080004B2989 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		3568FE0818B24080004B2989 /* Axis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Axis.h; sourceTree = "<group>"; };
+		3568FE0918B24080004B2989 /* Axis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Axis.m; sourceTree = "<group>"; };
+		3568FE0A18B24080004B2989 /* IconHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconHandler.h; sourceTree = "<group>"; };
+		3568FE0B18B24080004B2989 /* IconHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconHandler.m; sourceTree = "<group>"; };
+		3568FE0C18B24080004B2989 /* TextHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextHandler.h; sourceTree = "<group>"; };
+		3568FE0D18B24080004B2989 /* TextHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextHandler.m; sourceTree = "<group>"; };
+		3568FE0E18B24080004B2989 /* SceneHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneHandler.h; sourceTree = "<group>"; };
+		3568FE0F18B24080004B2989 /* SceneHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneHandler.m; sourceTree = "<group>"; };
+		3568FE1618B240A4004B2989 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		3568FE1718B240A4004B2989 /* Shader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shader.m; sourceTree = "<group>"; };
+		3568FE1818B240A4004B2989 /* PointShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointShader.h; sourceTree = "<group>"; };
+		3568FE1918B240A4004B2989 /* PointShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointShader.m; sourceTree = "<group>"; };
+		3568FE1A18B240A4004B2989 /* PointShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PointShader.vsh; sourceTree = "<group>"; };
+		3568FE1B18B240A4004B2989 /* PointShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PointShader.fsh; sourceTree = "<group>"; };
+		3568FE1C18B240A4004B2989 /* TriangleShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleShader.h; sourceTree = "<group>"; };
+		3568FE1D18B240A4004B2989 /* TriangleShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleShader.m; sourceTree = "<group>"; };
+		3568FE1E18B240A4004B2989 /* TriangleShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TriangleShader.vsh; sourceTree = "<group>"; };
+		3568FE1F18B240A4004B2989 /* TriangleShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TriangleShader.fsh; sourceTree = "<group>"; };
+		3568FE2018B240A4004B2989 /* TextureShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureShader.h; sourceTree = "<group>"; };
+		3568FE2118B240A4004B2989 /* TextureShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextureShader.m; sourceTree = "<group>"; };
+		3568FE2218B240A4004B2989 /* TextureShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureShader.vsh; sourceTree = "<group>"; };
+		3568FE2318B240A4004B2989 /* TextureShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TextureShader.fsh; sourceTree = "<group>"; };
+		3568FE2418B240A4004B2989 /* LineShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineShader.h; sourceTree = "<group>"; };
+		3568FE2518B240A4004B2989 /* LineShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineShader.m; sourceTree = "<group>"; };
+		3568FE2618B240A4004B2989 /* LineShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LineShader.vsh; sourceTree = "<group>"; };
+		3568FE2718B240A4004B2989 /* LineShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = LineShader.fsh; sourceTree = "<group>"; };
+		3568FE3518B24125004B2989 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		357565C517EC5CDC00AF86EC /* JourneySegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JourneySegment.h; sourceTree = "<group>"; };
+		357565C617EC5CDC00AF86EC /* JourneySegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JourneySegment.m; sourceTree = "<group>"; };
+		35A9FD1E180292770008BFB9 /* BusQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusQuery.h; sourceTree = "<group>"; };
+		35A9FD1F180292770008BFB9 /* BusQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusQuery.m; sourceTree = "<group>"; };
+		35A9FD211802943B0008BFB9 /* BusTimeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusTimeQuery.h; sourceTree = "<group>"; };
+		35A9FD221802943B0008BFB9 /* BusTimeQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusTimeQuery.m; sourceTree = "<group>"; };
+		35A9FD2B1802FEAD0008BFB9 /* Scenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scenario.h; sourceTree = "<group>"; };
+		35A9FD2C1802FEAD0008BFB9 /* Scenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scenario.m; sourceTree = "<group>"; };
+		35A9FD3F180301070008BFB9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		35A9FD411803010E0008BFB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		35FA9B5E17D9E1420031125F /* TravelDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35FA9B6117D9E1420031125F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35FA9B6317D9E1420031125F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35FA9B6517D9E1420031125F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35FA9B6917D9E1420031125F /* TravelDashboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravelDashboard-Info.plist"; sourceTree = "<group>"; };
+		35FA9B6B17D9E1420031125F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35FA9B6D17D9E1420031125F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35FA9B6F17D9E1420031125F /* TravelDashboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelDashboard-Prefix.pch"; sourceTree = "<group>"; };
+		35FA9B7017D9E1420031125F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35FA9B7117D9E1420031125F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35FA9B7317D9E1420031125F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		35FA9B7517D9E1420031125F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		35FA9B7717D9E1420031125F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		35FC811C18E2F6CC005ACEFB /* BuilderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuilderCell.h; path = TravelDashboard/BuilderCell.h; sourceTree = "<group>"; };
+		35FC811D18E2F6CC005ACEFB /* BuilderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuilderCell.m; path = TravelDashboard/BuilderCell.m; sourceTree = "<group>"; };
+		35FC811E18E2F6CC005ACEFB /* BuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuilderViewController.h; path = TravelDashboard/BuilderViewController.h; sourceTree = "<group>"; };
+		35FC811F18E2F6CC005ACEFB /* BuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuilderViewController.m; path = TravelDashboard/BuilderViewController.m; sourceTree = "<group>"; };
+		35FC812018E2F6CC005ACEFB /* BusRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusRoute.h; path = TravelDashboard/BusRoute.h; sourceTree = "<group>"; };
+		35FC812118E2F6CC005ACEFB /* BusRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusRoute.m; path = TravelDashboard/BusRoute.m; sourceTree = "<group>"; };
+		35FC812218E2F6CC005ACEFB /* BusRouteParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusRouteParser.h; path = TravelDashboard/BusRouteParser.h; sourceTree = "<group>"; };
+		35FC812318E2F6CC005ACEFB /* BusRouteParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusRouteParser.m; path = TravelDashboard/BusRouteParser.m; sourceTree = "<group>"; };
+		35FC812418E2F6CC005ACEFB /* BusRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusRouteViewController.h; path = TravelDashboard/BusRouteViewController.h; sourceTree = "<group>"; };
+		35FC812518E2F6CC005ACEFB /* BusRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusRouteViewController.m; path = TravelDashboard/BusRouteViewController.m; sourceTree = "<group>"; };
+		35FC812618E2F6CC005ACEFB /* BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusStop.h; path = TravelDashboard/BusStop.h; sourceTree = "<group>"; };
+		35FC812718E2F6CC005ACEFB /* BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusStop.m; path = TravelDashboard/BusStop.m; sourceTree = "<group>"; };
+		35FC812818E2F6CC005ACEFB /* BusStopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BusStopViewController.h; path = TravelDashboard/BusStopViewController.h; sourceTree = "<group>"; };
+		35FC812918E2F6CC005ACEFB /* BusStopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BusStopViewController.m; path = TravelDashboard/BusStopViewController.m; sourceTree = "<group>"; };
+		35FC812D18E2F6CC005ACEFB /* RailStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RailStation.h; path = TravelDashboard/RailStation.h; sourceTree = "<group>"; };
+		35FC812E18E2F6CC005ACEFB /* RailStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RailStation.m; path = TravelDashboard/RailStation.m; sourceTree = "<group>"; };
+		35FC812F18E2F6CC005ACEFB /* RailStationParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RailStationParser.h; path = TravelDashboard/RailStationParser.h; sourceTree = "<group>"; };
+		35FC813018E2F6CC005ACEFB /* RailStationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RailStationParser.m; path = TravelDashboard/RailStationParser.m; sourceTree = "<group>"; };
+		35FC813118E2F6CC005ACEFB /* RailStationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RailStationTableViewController.h; path = TravelDashboard/RailStationTableViewController.h; sourceTree = "<group>"; };
+		35FC813218E2F6CC005ACEFB /* RailStationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RailStationTableViewController.m; path = TravelDashboard/RailStationTableViewController.m; sourceTree = "<group>"; };
+		35FC813318E2F6CC005ACEFB /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextCell.h; path = TravelDashboard/TextCell.h; sourceTree = "<group>"; };
+		35FC813418E2F6CC005ACEFB /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextCell.m; path = TravelDashboard/TextCell.m; sourceTree = "<group>"; };
+		35FC814118E30860005ACEFB /* atlas_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = atlas_128x128.png; path = Resources/atlas_128x128.png; sourceTree = "<group>"; };
+		35FC814218E30860005ACEFB /* Bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bus.png; path = Resources/Bus.png; sourceTree = "<group>"; };
+		35FC814318E30860005ACEFB /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Car.png; path = Resources/Car.png; sourceTree = "<group>"; };
+		35FC814418E30860005ACEFB /* EA.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = EA.csv; path = Resources/EA.csv; sourceTree = "<group>"; };
+		35FC814518E30860005ACEFB /* RailReferences.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = RailReferences.csv; path = Resources/RailReferences.csv; sourceTree = "<group>"; };
+		35FC814618E30860005ACEFB /* tnds.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = tnds.bin; path = Resources/tnds.bin; sourceTree = "<group>"; };
+		35FC814718E30860005ACEFB /* Train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Train.png; path = Resources/Train.png; sourceTree = "<group>"; };
+		35FC814818E30860005ACEFB /* Walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Walk.png; path = Resources/Walk.png; sourceTree = "<group>"; };
+		35FC815118E308EB005ACEFB /* TNDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNDS.h; path = TravelDashboard/TNDS.h; sourceTree = "<group>"; };
+		35FC815218E308EB005ACEFB /* TNDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNDS.m; path = TravelDashboard/TNDS.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35FA9B5B17D9E1420031125F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3568FE3618B24125004B2989 /* GLKit.framework in Frameworks */,
+				35A9FD421803010E0008BFB9 /* QuartzCore.framework in Frameworks */,
+				35A9FD40180301070008BFB9 /* OpenGLES.framework in Frameworks */,
+				35FA9B6217D9E1420031125F /* UIKit.framework in Frameworks */,
+				35FA9B6417D9E1420031125F /* Foundation.framework in Frameworks */,
+				35FA9B6617D9E1420031125F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3568FE0218B2001F004B2989 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				35FC811C18E2F6CC005ACEFB /* BuilderCell.h */,
+				35FC811D18E2F6CC005ACEFB /* BuilderCell.m */,
+				35FC811E18E2F6CC005ACEFB /* BuilderViewController.h */,
+				35FC811F18E2F6CC005ACEFB /* BuilderViewController.m */,
+				35FC812018E2F6CC005ACEFB /* BusRoute.h */,
+				35FC812118E2F6CC005ACEFB /* BusRoute.m */,
+				35FC812218E2F6CC005ACEFB /* BusRouteParser.h */,
+				35FC812318E2F6CC005ACEFB /* BusRouteParser.m */,
+				35FC812418E2F6CC005ACEFB /* BusRouteViewController.h */,
+				35FC812518E2F6CC005ACEFB /* BusRouteViewController.m */,
+				35FC812618E2F6CC005ACEFB /* BusStop.h */,
+				35FC812718E2F6CC005ACEFB /* BusStop.m */,
+				35FC812818E2F6CC005ACEFB /* BusStopViewController.h */,
+				35FC812918E2F6CC005ACEFB /* BusStopViewController.m */,
+				35FC812D18E2F6CC005ACEFB /* RailStation.h */,
+				35FC812E18E2F6CC005ACEFB /* RailStation.m */,
+				35FC812F18E2F6CC005ACEFB /* RailStationParser.h */,
+				35FC813018E2F6CC005ACEFB /* RailStationParser.m */,
+				35FC813118E2F6CC005ACEFB /* RailStationTableViewController.h */,
+				35FC813218E2F6CC005ACEFB /* RailStationTableViewController.m */,
+				35FC813318E2F6CC005ACEFB /* TextCell.h */,
+				35FC813418E2F6CC005ACEFB /* TextCell.m */,
+			);
+			name = Builder;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3568FE0318B20044004B2989 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3568FE0618B24080004B2989 /* DashboardViewController.h */,
+				3568FE0718B24080004B2989 /* DashboardViewController.m */,
+				3568FE0818B24080004B2989 /* Axis.h */,
+				3568FE0918B24080004B2989 /* Axis.m */,
+				3568FE0A18B24080004B2989 /* IconHandler.h */,
+				3568FE0B18B24080004B2989 /* IconHandler.m */,
+				3568FE0C18B24080004B2989 /* TextHandler.h */,
+				3568FE0D18B24080004B2989 /* TextHandler.m */,
+				3568FE0E18B24080004B2989 /* SceneHandler.h */,
+				3568FE0F18B24080004B2989 /* SceneHandler.m */,
+				3568FE1518B24091004B2989 /* Shaders */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		3568FE0418B2018A004B2989 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				357565C517EC5CDC00AF86EC /* JourneySegment.h */,
+				357565C617EC5CDC00AF86EC /* JourneySegment.m */,
+				3562EB231800867C0019B4E1 /* SegmentInfo.h */,
+				3562EB241800867C0019B4E1 /* SegmentInfo.m */,
+				35A9FD2B1802FEAD0008BFB9 /* Scenario.h */,
+				35A9FD2C1802FEAD0008BFB9 /* Scenario.m */,
+				3562EB1D18006A290019B4E1 /* JourneyQuery.h */,
+				3562EB1E18006A290019B4E1 /* JourneyQuery.m */,
+				35A9FD1E180292770008BFB9 /* BusQuery.h */,
+				35A9FD1F180292770008BFB9 /* BusQuery.m */,
+				35A9FD211802943B0008BFB9 /* BusTimeQuery.h */,
+				35A9FD221802943B0008BFB9 /* BusTimeQuery.m */,
+				35635CF11805993E00716F7E /* BusLiveQuery.h */,
+				35635CF21805993E00716F7E /* BusLiveQuery.m */,
+				3562EB2018006A5C0019B4E1 /* TrainQuery.h */,
+				3562EB2118006A5C0019B4E1 /* TrainQuery.m */,
+				3562EB2618017FC80019B4E1 /* TrainDurationQuery.h */,
+				3562EB2718017FC80019B4E1 /* TrainDurationQuery.m */,
+				35635CEB18049E0800716F7E /* CarQuery.h */,
+				35635CEC18049E0800716F7E /* CarQuery.m */,
+				35635CEE1804A20E00716F7E /* PostcodeQuery.h */,
+				35635CEF1804A20E00716F7E /* PostcodeQuery.m */,
+			);
+			name = Query;
+			sourceTree = "<group>";
+		};
+		3568FE1518B24091004B2989 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3568FE1618B240A4004B2989 /* Shader.h */,
+				3568FE1718B240A4004B2989 /* Shader.m */,
+				3568FE1818B240A4004B2989 /* PointShader.h */,
+				3568FE1918B240A4004B2989 /* PointShader.m */,
+				3568FE1A18B240A4004B2989 /* PointShader.vsh */,
+				3568FE1B18B240A4004B2989 /* PointShader.fsh */,
+				3568FE1C18B240A4004B2989 /* TriangleShader.h */,
+				3568FE1D18B240A4004B2989 /* TriangleShader.m */,
+				3568FE1E18B240A4004B2989 /* TriangleShader.vsh */,
+				3568FE1F18B240A4004B2989 /* TriangleShader.fsh */,
+				3568FE2018B240A4004B2989 /* TextureShader.h */,
+				3568FE2118B240A4004B2989 /* TextureShader.m */,
+				3568FE2218B240A4004B2989 /* TextureShader.vsh */,
+				3568FE2318B240A4004B2989 /* TextureShader.fsh */,
+				3568FE2418B240A4004B2989 /* LineShader.h */,
+				3568FE2518B240A4004B2989 /* LineShader.m */,
+				3568FE2618B240A4004B2989 /* LineShader.vsh */,
+				3568FE2718B240A4004B2989 /* LineShader.fsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		35D7008318CE2E4300154403 /* TNDS */ = {
+			isa = PBXGroup;
+			children = (
+				35FC815118E308EB005ACEFB /* TNDS.h */,
+				35FC815218E308EB005ACEFB /* TNDS.m */,
+			);
+			name = TNDS;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		35E06F5A1879BF6800F193EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35FC814118E30860005ACEFB /* atlas_128x128.png */,
+				35FC814218E30860005ACEFB /* Bus.png */,
+				35FC814318E30860005ACEFB /* Car.png */,
+				35FC814418E30860005ACEFB /* EA.csv */,
+				35FC814518E30860005ACEFB /* RailReferences.csv */,
+				35FC814618E30860005ACEFB /* tnds.bin */,
+				35FC814718E30860005ACEFB /* Train.png */,
+				35FC814818E30860005ACEFB /* Walk.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		35FA9B5517D9E1420031125F = {
+			isa = PBXGroup;
+			children = (
+				35FA9B6717D9E1420031125F /* TravelDashboard */,
+				35FA9B6017D9E1420031125F /* Frameworks */,
+				35FA9B5F17D9E1420031125F /* Products */,
+				35E06F5A1879BF6800F193EF /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		35FA9B5F17D9E1420031125F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9B5E17D9E1420031125F /* TravelDashboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35FA9B6017D9E1420031125F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3568FE3518B24125004B2989 /* GLKit.framework */,
+				35A9FD411803010E0008BFB9 /* QuartzCore.framework */,
+				35A9FD3F180301070008BFB9 /* OpenGLES.framework */,
+				35FA9B6117D9E1420031125F /* UIKit.framework */,
+				35FA9B6317D9E1420031125F /* Foundation.framework */,
+				35FA9B6517D9E1420031125F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35FA9B6717D9E1420031125F /* TravelDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9B7017D9E1420031125F /* AppDelegate.h */,
+				35FA9B7117D9E1420031125F /* AppDelegate.m */,
+				354C96F417E09CED0089CBF6 /* MainViewController.h */,
+				354C96F517E09CED0089CBF6 /* MainViewController.m */,
+				352289F917FF318B009684D1 /* ShowJourneyViewController.h */,
+				352289FA17FF318B009684D1 /* ShowJourneyViewController.m */,
+				3568FE0418B2018A004B2989 /* Query */,
+				3568FE0318B20044004B2989 /* Dashboard */,
+				3568FE0218B2001F004B2989 /* Builder */,
+				35D7008318CE2E4300154403 /* TNDS */,
+				35FA9B6817D9E1420031125F /* Supporting Files */,
+			);
+			path = TravelDashboard;
+			sourceTree = "<group>";
+		};
+		35FA9B6817D9E1420031125F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35FA9B6917D9E1420031125F /* TravelDashboard-Info.plist */,
+				35FA9B6A17D9E1420031125F /* InfoPlist.strings */,
+				35FA9B6D17D9E1420031125F /* main.m */,
+				35FA9B6F17D9E1420031125F /* TravelDashboard-Prefix.pch */,
+				35FA9B7317D9E1420031125F /* Default.png */,
+				35FA9B7517D9E1420031125F /* Default@2x.png */,
+				35FA9B7717D9E1420031125F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35FA9B5D17D9E1420031125F /* TravelDashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35FA9B8117D9E1420031125F /* Build configuration list for PBXNativeTarget "TravelDashboard" */;
+			buildPhases = (
+				35FA9B5A17D9E1420031125F /* Sources */,
+				35FA9B5B17D9E1420031125F /* Frameworks */,
+				35FA9B5C17D9E1420031125F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravelDashboard;
+			productName = JourneyBuilder;
+			productReference = 35FA9B5E17D9E1420031125F /* TravelDashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35FA9B5617D9E1420031125F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ian Sheret";
+				TargetAttributes = {
+					35FA9B5D17D9E1420031125F = {
+						DevelopmentTeam = 7APGXK4N78;
+					};
+				};
+			};
+			buildConfigurationList = 35FA9B5917D9E1420031125F /* Build configuration list for PBXProject "TravelDashboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35FA9B5517D9E1420031125F;
+			productRefGroup = 35FA9B5F17D9E1420031125F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35FA9B5D17D9E1420031125F /* TravelDashboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35FA9B5C17D9E1420031125F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FC814918E30898005ACEFB /* atlas_128x128.png in Resources */,
+				35FC814A18E30898005ACEFB /* Bus.png in Resources */,
+				35FC814B18E30898005ACEFB /* Car.png in Resources */,
+				35FC814C18E30898005ACEFB /* EA.csv in Resources */,
+				35FC814D18E30898005ACEFB /* RailReferences.csv in Resources */,
+				35FC814E18E30898005ACEFB /* tnds.bin in Resources */,
+				35FC814F18E30898005ACEFB /* Train.png in Resources */,
+				35FC815018E30898005ACEFB /* Walk.png in Resources */,
+				3568FE3118B240A4004B2989 /* TextureShader.fsh in Resources */,
+				3568FE2B18B240A4004B2989 /* PointShader.fsh in Resources */,
+				3568FE3018B240A4004B2989 /* TextureShader.vsh in Resources */,
+				3568FE2D18B240A4004B2989 /* TriangleShader.vsh in Resources */,
+				3568FE2E18B240A4004B2989 /* TriangleShader.fsh in Resources */,
+				3568FE2A18B240A4004B2989 /* PointShader.vsh in Resources */,
+				3568FE3418B240A4004B2989 /* LineShader.fsh in Resources */,
+				3568FE3318B240A4004B2989 /* LineShader.vsh in Resources */,
+				35FA9B6C17D9E1420031125F /* InfoPlist.strings in Resources */,
+				35FA9B7417D9E1420031125F /* Default.png in Resources */,
+				35FA9B7617D9E1420031125F /* Default@2x.png in Resources */,
+				35FA9B7817D9E1420031125F /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35FA9B5A17D9E1420031125F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FC813E18E2F6CC005ACEFB /* RailStationParser.m in Sources */,
+				35FC813D18E2F6CC005ACEFB /* RailStation.m in Sources */,
+				35FA9B6E17D9E1420031125F /* main.m in Sources */,
+				3562EB2818017FC80019B4E1 /* TrainDurationQuery.m in Sources */,
+				35FA9B7217D9E1420031125F /* AppDelegate.m in Sources */,
+				35A9FD20180292770008BFB9 /* BusQuery.m in Sources */,
+				35FC815318E308EB005ACEFB /* TNDS.m in Sources */,
+				35635CF01804A20E00716F7E /* PostcodeQuery.m in Sources */,
+				3568FE1318B24080004B2989 /* TextHandler.m in Sources */,
+				3562EB251800867C0019B4E1 /* SegmentInfo.m in Sources */,
+				35FC813618E2F6CC005ACEFB /* BuilderViewController.m in Sources */,
+				352289FB17FF318B009684D1 /* ShowJourneyViewController.m in Sources */,
+				3568FE2F18B240A4004B2989 /* TextureShader.m in Sources */,
+				3568FE1418B24080004B2989 /* SceneHandler.m in Sources */,
+				35635CF31805993E00716F7E /* BusLiveQuery.m in Sources */,
+				3568FE1218B24080004B2989 /* IconHandler.m in Sources */,
+				35FC813F18E2F6CC005ACEFB /* RailStationTableViewController.m in Sources */,
+				35FC813B18E2F6CC005ACEFB /* BusStopViewController.m in Sources */,
+				35A9FD371802FEAD0008BFB9 /* Scenario.m in Sources */,
+				354C96F617E09CED0089CBF6 /* MainViewController.m in Sources */,
+				3568FE1118B24080004B2989 /* Axis.m in Sources */,
+				35FC813818E2F6CC005ACEFB /* BusRouteParser.m in Sources */,
+				35A9FD231802943B0008BFB9 /* BusTimeQuery.m in Sources */,
+				35FC813518E2F6CC005ACEFB /* BuilderCell.m in Sources */,
+				35FC813A18E2F6CC005ACEFB /* BusStop.m in Sources */,
+				357565C717EC5CDC00AF86EC /* JourneySegment.m in Sources */,
+				3568FE2918B240A4004B2989 /* PointShader.m in Sources */,
+				3568FE1018B24080004B2989 /* DashboardViewController.m in Sources */,
+				3568FE2C18B240A4004B2989 /* TriangleShader.m in Sources */,
+				35635CED18049E0800716F7E /* CarQuery.m in Sources */,
+				35FC814018E2F6CC005ACEFB /* TextCell.m in Sources */,
+				3562EB1F18006A290019B4E1 /* JourneyQuery.m in Sources */,
+				35FC813918E2F6CC005ACEFB /* BusRouteViewController.m in Sources */,
+				3562EB2218006A5C0019B4E1 /* TrainQuery.m in Sources */,
+				35FC813718E2F6CC005ACEFB /* BusRoute.m in Sources */,
+				3568FE2818B240A4004B2989 /* Shader.m in Sources */,
+				3568FE3218B240A4004B2989 /* LineShader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35FA9B6A17D9E1420031125F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35FA9B6B17D9E1420031125F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35FA9B7F17D9E1420031125F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35FA9B8017D9E1420031125F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35FA9B8217D9E1420031125F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravelDashboard/TravelDashboard-Prefix.pch";
+				INFOPLIST_FILE = "TravelDashboard/TravelDashboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = TravelDashboard;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		35FA9B8317D9E1420031125F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravelDashboard/TravelDashboard-Prefix.pch";
+				INFOPLIST_FILE = "TravelDashboard/TravelDashboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = TravelDashboard;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35FA9B5917D9E1420031125F /* Build configuration list for PBXProject "TravelDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA9B7F17D9E1420031125F /* Debug */,
+				35FA9B8017D9E1420031125F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35FA9B8117D9E1420031125F /* Build configuration list for PBXNativeTarget "TravelDashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35FA9B8217D9E1420031125F /* Debug */,
+				35FA9B8317D9E1420031125F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35FA9B5617D9E1420031125F /* Project object */;
+}
